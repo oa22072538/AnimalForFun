@@ -11,5 +11,75 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="@dimen/my_margin"
+        android:text="@string/question"
+        android:textSize="@dimen/h1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imbQuestion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/bird_02"
+        app:layout_constraintRight_toLeftOf="@+id/imbVolmn"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/imbVolmn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imbQuestion"
+        app:layout_constraintLeft_toRightOf="@+id/imbQuestion"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/volume" />
+
+    <Button
+        android:id="@+id/btm1"
+        android:onClick="choiceAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="236dp"
+        app:layout_constraintRight_toLeftOf="@+id/btm2" />
+
+    <Button
+        android:id="@+id/btm2"
+        android:onClick="choiceAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintLeft_toRightOf="@+id/btm1"
+        app:layout_constraintRight_toLeftOf="@+id/btm4"
+        app:layout_constraintTop_toTopOf="@+id/btm1" />
+
+    <Button
+        android:id="@+id/btm3"
+        android:onClick="choiceAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintLeft_toRightOf="@+id/btm4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btm4" />
+
+    <Button
+        android:id="@+id/btm4"
+        android:onClick="choiceAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintRight_toLeftOf="@+id/btm3"
+        app:layout_constraintLeft_toRightOf="@+id/btm2"
+        app:layout_constraintTop_toTopOf="@+id/btm2" />
 </android.support.constraint.ConstraintLayout>
